@@ -1,0 +1,108 @@
+<section class="container-wrapper">
+    <div class="wrap">
+        <div class="wrap__inner">
+            <div class="grid-m-12 grid-l-10 grid-s-12 grid-m-offset-0 grid-l-offset-1">
+                <div class="wrap__inner">
+                    <div class="grid-m-12 grid-s-12">
+                        <f:for each="{paginatedContacts}" as="contact">
+                            <div class="c-m-contact-box   <rn:contains haystack="{contact.contacttype}" needle="3"><f:if condition="{contact.management} == 1">c-m-contact-box--highlight </f:if></rn:contains>">
+                                <div class="wrap__inner wrap__inner--equal-height-columns">
+                                    <div class="grid-m-4 grid-s-12">
+                                        <div class="c-m-contact-box__content-wrapper">
+                                            <rn:contains haystack="{contact.contacttype}" needle="2,3"><f:if condition="{contact.locations.0.title}"><span class="c-m-contact-box__kicker">{contact.locations.0.title}</span></f:if></rn:contains>
+                                            <span class="c-m-contact-box__name"><f:if condition="{contact.management}"><f:then><f:render section="name" arguments="{contact:contact}" /></f:then><f:else><rn:contains haystack="{contact.contacttype}" needle="1">{contact.description}</rn:contains><rn:contains haystack="{contact.contacttype}" needle="2,3,4"><f:render section="name" arguments="{contact:contact}" /></rn:contains></f:else></f:if></span>
+
+                                            <f:render section="contactDataLeft" arguments="{contact:contact}" />
+                                            <f:if condition="{contact.phone}"><div class="c-m-contact-box__icon"> <i class="icon-phone"></i> <span>{contact.phone}</span> </div></f:if>
+                                            <rn:contains haystack="{contact.contacttype}" needle="2,3"><f:if condition="{contact.fax}"><div class="c-m-contact-box__icon"> <i class="icon-fax"></i> <span>{contact.fax}</span> </div></f:if></rn:contains>
+                                            <f:if condition="{contact.email}"><f:link.email class="c-a-btn c-a-btn--display-block  c-a-btn--align-center c-a-btn--icon" email="{contact.email}"><i class="icon-mail"></i></f:link.email></f:if>
+                                        </div>
+                                    </div>
+                                    <div class="grid-m-4 grid-s-12">
+                                        <div class="c-m-contact-box__content-wrapper">
+                                            <f:render section="contactDataRight" arguments="{contact:contact,locationTitle:locationTitle,contactDetail:contactDetail}" />
+                                        </div>
+                                    </div>
+                                    <div class="grid-m-4 grid-s-12">
+                                        <f:if condition="{contact.image}"><div class="c-m-contact-box__content-wrapper"> <f:image image="{contact.image}" width="150c" class="c-m-contact-box__image" />  </div></f:if>
+                                    </div>
+                                </div>
+                            </div>
+                        </f:for>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<f:section name="contactDataRight">
+    <rn:contains haystack="{contact.contacttype}" needle="2,3"><f:if condition="{contact.presence}">
+        <div class="c-m-contact-box__attendance">
+            <div class="c-m-contact-box__attendance-element">
+                <span class="c-m-contact-box__time">Morning</span>
+                <f:for each="{rn:decbin(value:contact.presence)}" as="presence" key="label" iteration="i">
+                    <f:if condition="{i.cycle} % 2">
+						<span class="c-m-contact-box__day {f:if(condition: '{presence} == 1', then:'c-m-contact-box__day--bold')}">
+							{f:if(condition: '{i.cycle} == 1', then:'Mo')}
+							{f:if(condition: '{i.cycle} == 3', then:'Tue')}
+							{f:if(condition: '{i.cycle} == 5', then:'Wed')}
+							{f:if(condition: '{i.cycle} == 7', then:'Thur')}
+							{f:if(condition: '{i.cycle} == 9', then:'Fri')}
+							{f:if(condition: '{i.cycle} == 11', then:'Sat')}
+							{f:if(condition: '{i.cycle} == 13', then:'Sun')}
+						</span>
+                    </f:if>
+                </f:for>
+            </div>
+            <div class="c-m-contact-box__attendance-element">
+                <span class="c-m-contact-box__time">Afternoon</span>
+                <f:for each="{rn:decbin(value:contact.presence)}" as="presence" key="label" iteration="i">
+                    <f:if condition="{i.cycle} % 2">
+                        <f:else>
+								<span class="c-m-contact-box__day {f:if(condition: '{presence} == 1', then:'c-m-contact-box__day--bold')}">
+                                    {f:if(condition: '{i.cycle} == 2', then:'Mo')}
+                                    {f:if(condition: '{i.cycle} == 4', then:'Tue')}
+                                    {f:if(condition: '{i.cycle} == 6', then:'Wed')}
+                                    {f:if(condition: '{i.cycle} == 8', then:'Thur')}
+                                    {f:if(condition: '{i.cycle} == 10', then:'Fri')}
+                                    {f:if(condition: '{i.cycle} == 12', then:'Sat')}
+                                    {f:if(condition: '{i.cycle} == 14', then:'Sun')}
+								</span>
+                        </f:else>
+                    </f:if>
+                </f:for>
+            </div>
+        </div>
+    </f:if></rn:contains>
+    <span class="c-m-contact-box__kicker">
+
+		<rn:contains haystack="{contact.contacttype}" needle="4"><f:if condition="{contact.targetgroup}"><f:for each="{contact.targetgroup}" iteration="i" as="targetgroup">{targetgroup.title}{f:if(condition: '{i.isLast}', else:', ')}</f:for><br></f:if></rn:contains>
+		<rn:contains haystack="{contact.contacttype}" needle="4"><f:if condition="{contact.district}"><f:for each="{contact.district}" iteration="i" as="district">{district.title}{f:if(condition: '{i.isLast}', else:', ')}</f:for><br></f:if></rn:contains>
+		<rn:contains haystack="{contact.contacttype}" needle="4"><f:if condition="{contact.topic}"><f:for each="{contact.topic}" iteration="i" as="topic">{topic.title}{f:if(condition: '{i.isLast}', else:', ')}</f:for><br></f:if></rn:contains>
+	</span>
+    <rn:contains haystack="{contact.contacttype}" needle="2,3">
+        <f:if condition="{contact.locations.0.street}"> <div class="c-m-contact-box__icon"> <i class="icon-map"></i> <span>{contact.locations.0.street} {contact.locations.0.hnr}</span> </div></f:if>
+        <f:if condition="{contact.locations.0.city}"><div class="c-m-contact-box__icon"> <i class="icon-location"></i> <span>{contact.locations.0.zip} {contact.locations.0.city}</span> </div></f:if>
+        <f:if condition="!{locationTitle} && {contact.locations.0.uid}">
+                <a href="<f:uri.page pageUid="{contactDetail}" section="zip-filter" noCacheHash="true" additionalParams="{tx_rncontacts_locationmap: {zip: '{contact.locations.0.zip}'}}" />" class="c-a-btn c-a-btn--display-block  c-a-btn--align-center c-a-btn--icon" title="Auf der Karte anzeigen" tabindex="0">Show on Map</a>
+        </f:if>
+    </rn:contains>
+</f:section>
+
+<f:section name="name">
+    <f:if condition="{contact.lastName}">
+        <f:if condition="{contact.gender}==m">Mr </f:if><f:if condition="{contact.gender}==f">Ms </f:if><f:if condition="{contact.title}">{contact.title} </f:if><f:if condition="{contact.firstName}">{contact.firstName} </f:if><f:if condition="{contact.middleName}">{contact.middleName} </f:if>{contact.lastName}
+    </f:if>
+</f:section>
+
+<f:section name="contactDataLeft">
+	<span class="c-m-contact-box__kicker">
+		<rn:contains haystack="{contact.contacttype}" needle="4"><f:if condition="{contact.activityConsultant}"><f:for each="{contact.activityConsultant}" iteration="i" as="consultant">{consultant.title}{f:if(condition: '{i.isLast}', else:', ')}</f:for><br></f:if></rn:contains>
+		<rn:contains haystack="{contact.contacttype}" needle="3"><f:if condition="{contact.activityConsulting}"><f:for each="{contact.activityConsulting}" iteration="i" as="consulting">{consulting.title}{f:if(condition: '{i.isLast}', else:', ')}</f:for><br></f:if></rn:contains>
+		<rn:contains haystack="{contact.contacttype}" needle="2"><f:if condition="{contact.activityProject}"><f:for each="{contact.activityProject}" iteration="i" as="project">{project.title}{f:if(condition: '{i.isLast}', else:', ')}</f:for><br></f:if></rn:contains>
+		<rn:contains haystack="{contact.contacttype}" needle="1"><f:if condition="{contact.openingHours}">{contact.openingHours->f:format.nl2br()}<br></f:if></rn:contains>
+		<rn:contains haystack="{contact.contacttype}" needle="5"><f:if condition="{contact.company}">{contact.company}<br></f:if></rn:contains>
+		<rn:contains haystack="{contact.contacttype}" needle="2"><f:if condition="{contact.paper}"><f:for each="{contact.paper}" iteration="i" as="paper">{paper.title}{f:if(condition: '{i.isLast}', else:', ')}</f:for><br></f:if></rn:contains>
+	</span>
+</f:section>

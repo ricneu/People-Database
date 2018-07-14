@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<xliff version="1.0">
+    <file source-language="en" target-language="de" datatype="plaintext" original="messages" date="2018-01-16T14:35:20Z" product-name="rncontacts">
+        <header />
+        <body>
+            <trans-unit id="tx_rncontacts_domain_model_contact.paper">
+                <target>Referat</target>
+            </trans-unit>
+            <trans-unit id="tx_rncontacts_domain_model_contact.activity_project">
+                <target>Tätigkeit Projekt</target>
+            </trans-unit>
+            <trans-unit id="tx_rncontacts_domain_model_contact.activity_consulting">
+                <target>Tätigkeit Beratung</target>
+            </trans-unit>
+            <trans-unit id="tx_rncontacts_domain_model_contact.activity_consultant">
+                <target>Tätigkeit Referent</target>
+            </trans-unit>
+            <trans-unit id="tx_rncontacts_domain_model_contact_extended">
+                <target>Erweiterte Kontaktdaten</target>
+            </trans-unit>
+            <trans-unit id="tt_address">
+                <target>Personen</target>
+            </trans-unit>
+            <trans-unit id="tx_rncontacts_domain_model_location">
+                <target>Adressen</target>
+            </trans-unit>
+            <trans-unit id="tx_rncontacts_domain_model_location.type">
+                <target>Adressen-Typ</target>
+            </trans-unit>
+            <trans-unit id="tx_rncontacts_domain_model_location.type.1">
+                <target>Referenzschule</target>
+            </trans-unit>
+            <trans-unit id="tx_rncontacts_domain_model_location.type.4">
+                <target>Schule</target>
+            </trans-unit>
+            <trans-unit id="tx_rncontacts_domain_model_location.type.2">
+                <target>Projekt-Standorte</target>
+            </trans-unit>
+            <trans-unit id="tx_rncontacts_domain_model_location.type.3">
+                <target>Zentrumstandorte</target>
+            </trans-unit>
+            <trans-unit id="tx_rncontacts_domain_model_location.title">
+                <target>Bezeichnung</target>
+            </trans-unit>
+            <trans-unit id="tx_rncontacts_domain_model_location.street">
+                <target>Straße</target>
+            </trans-unit>
+            <trans-unit id="tx_rncontacts_domain_model_location.hnr">
+                <target>Hausnummer</target>
+            </trans-unit>
+            <trans-unit id="tx_rncontacts_domain_model_location.zip">
+                <target>Zip</target>
+            </trans-unit>
+            <trans-unit id="tx_rncontacts_domain_model_location.city">
+                <target>Ort</target>
+            </trans-unit>
+            <trans-unit id="tx_rncontacts_domain_model_location.coordinatex">
+                <target>Geokoordinaten X</target>
+            </trans-unit>
+            <trans-unit id="tx_rncontacts_domain_model_location.coordinatey">
+                <target>Geokoordinaten Y</target>
+            </trans-unit>
+            <trans-unit id="tx_rncontacts_domain_model_location.district">
+                <target>Landkreis</target>
+            </trans-unit>
+            <trans-unit id="tx_rncontacts_domain_model_location.contacts">
+                <target>Kontakte</target>
+            </trans-unit>
+            <trans-unit id="tx_rncontacts_domain_model_contact">
+                <target>Kontakt</target>
+            </trans-unit>
+            <trans-unit id="tx_rncontacts_domain_model_contact.type">
+                <target>Kontakttyp</target>
+            </trans-unit>
+            <trans-unit id="tx_rncontacts_domain_model_contact.type.1">
+                <target>Hotline</target>
+            </trans-unit>
+            <trans-unit id="tx_rncontacts_domain_model_contact.type.2">
+                <target>Mitarbeiter</target>
+            </trans-unit>
+            <trans-unit id="tx_rncontacts_domain_model_contact.type.3">
+                <target>Berater</target>
+            </trans-unit>
+            <trans-unit id="tx_rncontacts_domain_model_contact.type.3.1">
+                <target>Berater / Zentrenleiter</target>
+            </trans-unit>
+            <trans-unit id="tx_rncontacts_domain_model_contact.type.4">
+                <target>Referent</target>
+            </trans-unit>
+            <trans-unit id="tx_rncontacts_domain_model_contact.type.5">
+                <target>Softwareanbieter</target>
+            </trans-unit>
+            <trans-unit id="tx_rncontacts_domain_model_contact.management">
+                <target>Leitung </target>
+            </trans-unit>
+            <trans-unit id="tx_rncontacts_domain_model_contact.location">
+                <target>Standort</target>
+            </trans-unit>
+            <trans-unit id="tx_rncontacts_domain_model_contact.activity_area">
+                <target>Tätigkeitsbereich</target>
+            </trans-unit>
+            <trans-unit id="tx_rncontacts_domain_model_contact.activity">
+                <target>Tätigkeit</target>
+            </trans-unit>
+            <trans-unit id="tx_rncontacts_domain_model_contact.motto">
+                <target>Motto</target>
+            </trans-unit>
+            <trans-unit id="tx_rncontacts_domain_model_contact.targetgroup">
+                <target>Zielgruppe</target>
+            </trans-unit>
+            <trans-unit id="tx_rncontacts_domain_model_contact.topic">
+                <target>Thema</target>
+            </trans-unit>
+            <trans-unit id="tx_rncontacts_domain_model_contact.district">
+                <target>Landkreis</target>
+            </trans-unit>
+            <trans-unit id="tx_rncontacts_domain_model_contact.region">
+                <target>Regierungsbezirk</target>
+            </trans-unit>
+            <trans-unit id="tx_rncontacts_domain_model_contact.presence">
+                <target>Anwesenheit</target>
+            </trans-unit>
+            <trans-unit id="tx_rncontacts_domain_model_contact.presence.1">
+                <target>Montag Vormittag</target>
+            </trans-unit>
+            <trans-unit id="tx_rncontacts_domain_model_contact.presence.3">
+                <target>Dienstag Vormittag</target>
+            </trans-unit>
+            <trans-unit id="tx_rncontacts_domain_model_contact.presence.5">
+                <target>Mittwoch Vormittag</target>
+            </trans-unit>
+            <trans-unit id="tx_rncontacts_domain_model_contact.presence.7">
+                <target>Donnerstag Vormittag</target>
+            </trans-unit>
+            <trans-unit id="tx_rncontacts_domain_model_contact.presence.9">
+                <target>Freitag Vormittag</target>
+            </trans-unit>
+            <trans-unit id="tx_rncontacts_domain_model_contact.presence.11">
+                <target>Samstag Vormittag</target>
+            </trans-unit>
+            <trans-unit id="tx_rncontacts_domain_model_contact.presence.13">
+                <target>Sonntag Vormittag</target>
+            </trans-unit>
+            <trans-unit id="tx_rncontacts_domain_model_contact.presence.2">
+                <target>Montag Nachmittag</target>
+            </trans-unit>
+            <trans-unit id="tx_rncontacts_domain_model_contact.presence.4">
+                <target>Dienstag Nachmittag</target>
+            </trans-unit>
+            <trans-unit id="tx_rncontacts_domain_model_contact.presence.6">
+                <target>Mittwoch Nachmittag</target>
+            </trans-unit>
+            <trans-unit id="tx_rncontacts_domain_model_contact.presence.8">
+                <target>Donnerstag Nachmittag</target>
+            </trans-unit>
+            <trans-unit id="tx_rncontacts_domain_model_contact.presence.10">
+                <target>Freitag Nachmittag</target>
+            </trans-unit>
+            <trans-unit id="tx_rncontacts_domain_model_contact.presence.12">
+                <target>Samstag Nachmittag</target>
+            </trans-unit>
+            <trans-unit id="tx_rncontacts_domain_model_contact.presence.14">
+                <target>Sonntag Nachmittag</target>
+            </trans-unit>
+            <trans-unit id="tx_rncontacts_domain_model_contact.opening_hours">
+                <target>Öffnungszeiten</target>
+            </trans-unit>
+            <trans-unit id="tt_address.tx_extbase_type.Tx_Rncontacts_Contact">
+                <target>Kontaktdatenbank</target>
+            </trans-unit>
+            <trans-unit id="tx_rncontacts_domain_model_paper">
+                <target>Referat</target>
+            </trans-unit>
+            <trans-unit id="tx_rncontacts_domain_model_paper.title">
+                <target>Titel</target>
+            </trans-unit>
+            <trans-unit id="tx_rncontacts_domain_model_activityproject">
+                <target>Tätigkeit Project</target>
+            </trans-unit>
+            <trans-unit id="tx_rncontacts_domain_model_activityproject.title">
+                <target>Titel</target>
+            </trans-unit>
+            <trans-unit id="tx_rncontacts_domain_model_activityconsulting">
+                <target>Tätigkeit Beratung</target>
+            </trans-unit>
+            <trans-unit id="tx_rncontacts_domain_model_activityconsulting.title">
+                <target>Titel</target>
+            </trans-unit>
+            <trans-unit id="tx_rncontacts_domain_model_activityconsultant">
+                <target>Tätigkeit Referent</target>
+            </trans-unit>
+            <trans-unit id="tx_rncontacts_domain_model_activityconsultant.title">
+                <target>Titel</target>
+            </trans-unit>
+            <trans-unit id="tx_rncontacts_domain_model_targetgroup">
+                <target>Zielgruppe</target>
+            </trans-unit>
+            <trans-unit id="tx_rncontacts_domain_model_targetgroup.title">
+                <target>Titel</target>
+            </trans-unit>
+            <trans-unit id="tx_rncontacts_domain_model_topic">
+                <target>Thema</target>
+            </trans-unit>
+            <trans-unit id="tx_rncontacts_domain_model_topic.title">
+                <target>Titel</target>
+            </trans-unit>
+            <trans-unit id="tx_rncontacts_domain_model_district">
+                <target>Landkreis</target>
+            </trans-unit>
+            <trans-unit id="tx_rncontacts_domain_model_district.title">
+                <target>Titel</target>
+            </trans-unit>
+            <trans-unit id="tx_rncontacts_domain_model_district.zip">
+                <target>PLZ</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2018-01-31T14:29:30Z" product-name="rncontacts">
+		<header/>
+		<body>
+			<trans-unit id="type.description">
+				<source>type</source>
+			</trans-unit>
+			<trans-unit id="management.description">
+				<source>management</source>
+			</trans-unit>
+			<trans-unit id="presence.description">
+				<source>presence</source>
+			</trans-unit>
+			<trans-unit id="opening_hours.description">
+				<source>openingHours</source>
+			</trans-unit>
+			<trans-unit id="district.description">
+				<source>district</source>
+			</trans-unit>
+			<trans-unit id="activity_consultant.description">
+				<source>activityConsultant</source>
+			</trans-unit>
+			<trans-unit id="activity_project.description">
+				<source>activityProject</source>
+			</trans-unit>
+			<trans-unit id="activity_consulting.description">
+				<source>activityConsulting</source>
+			</trans-unit>
+			<trans-unit id="topic.description">
+				<source>topic</source>
+			</trans-unit>
+			<trans-unit id="paper.description">
+				<source>paper</source>
+			</trans-unit>
+			<trans-unit id="targetgroup.description">
+				<source>targetgroup</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

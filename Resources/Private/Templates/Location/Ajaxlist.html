@@ -1,0 +1,17 @@
+{namespace rn=RN\Rncontent\ViewHelpers}
+{namespace contact=RN\Rncontacts\ViewHelpers}
+
+<f:if condition="{contacts->f:count()}>0">
+    <section class="container-wrapper">
+        <div class="wrap">
+            <div class="wrap__inner">
+                <div class="grid-m-12 grid-s-12">
+                    <h2 class="o-align-center">locationTitle}</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+    <f:widget.paginate objects="{contacts}" as="paginatedContacts" configuration="{itemsPerPage: 5}">
+        <f:render partial="Contact/List" arguments="{_all}" />
+    </f:widget.paginate>
+</f:if>

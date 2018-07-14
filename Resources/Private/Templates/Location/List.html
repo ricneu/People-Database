@@ -1,0 +1,71 @@
+
+{namespace rn=RN\Rncontent\ViewHelpers}
+{namespace contact=RN\Rncontacts\ViewHelpers}
+<section class="container-wrapper container-wrapper--no-margin-top o-background-bgcolor-5">
+    <div class="wrap">
+        <div class="wrap__inner">
+            <div class="grid-m-12 grid-s-12">
+                <f:render partial="Location/Filter" arguments="{_all}" />
+            </div>
+        </div>
+    </div>
+</section>
+<f:if condition="{mapsCookie} == 0">
+<section class="container-wrapper container-wrapper--no-margin-top">
+    <div class="wrap wrap--full">
+        <div class="wrap__inner">
+            <div class="grid-m-12 grid-s-12">
+                <div id="googft-mapCanvas" class="c-m-gmap-view" data-error-message="Es wurde kein Ergebnis mit ihrer Suche gefunden.">
+                    <div class="c-m-gmap-view__preview">
+                        <div class="c-m-gmap-view__info-layer">
+                            <div class="c-m-icon-headline ">
+                                <h2 class="c-m-icon-headline__headline"> <i class="c-m-icon-headline__icon icon-alert"></i> <span>Zustimmung zur Nutzung von Google Maps</span> </h2>
+                            </div>
+                            <p>Diese Website nutzt die Google Maps API, einen Kartendienst der Google Inc. ("Google"), zur Darstellung der interaktiven Karte. Mit der Nutzung der interaktiven Karte erklären Sie sich einverstanden, dass Informationen über Ihre Benutzung dieser Website an einen Server von Google in den USA übertragen und dort gespeichert werden. Weitere Informationen (auch zur Deaktivierung des Dienstes) finden Sie in unserer <f:link.page target="_blank" pageUid="12917">Datenschutzerklärung</f:link.page>.</p> <a href="javascript:;" id="showGoogleMaps" onclick="" class="c-a-btn c-a-btn--background-dark c-a-btn--icon-highlight c-a-btn--align-center" title=""
+                                                                                        tabindex="0">Ich stimme zu</a> </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</f:if>
+<script>
+	var map;
+	var Markers = {};
+	var infowindow;
+	var locations = [
+		<f:for each="{locations}" as="location" iteration="i">
+			<f:if condition="{location.coordinatex} &&  {location.coordinatey}">
+			[
+                '<contact:escape>{location.title}</contact:escape>',
+                '<strong>{location.title}</strong><p>{location.street} {location.hnr}, <br>{location.zip} {location.city}<f:if condition="{location.phone}"><br><br><i class="icon-contact-2"></i> Tel.: {location.phone}<br></f:if><f:if condition="{location.email}"><br><a class="c-a-btn c-a-btn--display-block  c-a-btn--icon" href="{location.email}"> E-Mail senden</a><br></f:if><f:if condition="{location.management} && {location.type} == 3">Leitung: {location.management}</f:if></p><f:if condition="{location.type} == 2 or {location.type} == 3"><a class="ajaxCall" onClick="ajaxCall({location.uid});" href="javascript:;" data-location="">Alle Ansprechpartner</a></f:if>',
+                 <contact:escape>{location.coordinatex}</contact:escape>,
+	             <contact:escape>{location.coordinatey}</contact:escape>,
+                0
+            ]<f:if condition="{i.isLast}"><f:else>,</f:else></f:if>
+        </f:if>
+        </f:for>
+	];
+</script>
+
+
+
+    <section class="container-wrapper container-wrapper--no-margin-top">
+        <div class="wrap wrap--full">
+            <div class="wrap__inner">
+                <div class="grid-m-12 grid-s-12">
+                        <div id="googft-mapCanvas" class="c-m-gmap-view"  data-error-message="Tut uns leid. Ihre Suche ergab leider keinen Treffer."></div>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <f:comment>The record entry is loaded inside this element.</f:comment>
+    <div id="ajaxCallResult"></div>
+
+
+

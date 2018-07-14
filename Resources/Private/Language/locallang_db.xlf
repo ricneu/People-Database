@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2018-01-31T14:29:30Z" product-name="rncontacts">
+		<header/>
+		<body>
+			<trans-unit id="tx_rncontacts_domain_model_location">
+				<source>Location</source>
+			</trans-unit>
+			<trans-unit id="tx_rncontacts_domain_model_location.type">
+				<source>Type</source>
+			</trans-unit>
+			<trans-unit id="tx_rncontacts_domain_model_location.title">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="tx_rncontacts_domain_model_location.street">
+				<source>Street</source>
+			</trans-unit>
+			<trans-unit id="tx_rncontacts_domain_model_location.hnr">
+				<source>Hnr</source>
+			</trans-unit>
+			<trans-unit id="tx_rncontacts_domain_model_location.zip">
+				<source>Zip</source>
+			</trans-unit>
+			<trans-unit id="tx_rncontacts_domain_model_location.city">
+				<source>City</source>
+			</trans-unit>
+			<trans-unit id="tx_rncontacts_domain_model_location.coordinatex">
+				<source>Coordinatex</source>
+			</trans-unit>
+			<trans-unit id="tx_rncontacts_domain_model_location.coordinatey">
+				<source>Coordinatey</source>
+			</trans-unit>
+			<trans-unit id="tx_rncontacts_domain_model_location.district">
+				<source>District</source>
+			</trans-unit>
+			<trans-unit id="tx_rncontacts_domain_model_location.contacts">
+				<source>Contacts</source>
+			</trans-unit>
+			<trans-unit id="tx_rncontacts_domain_model_contact">
+				<source>Contact</source>
+			</trans-unit>
+			<trans-unit id="tx_rncontacts_domain_model_contact.type">
+				<source>Type</source>
+			</trans-unit>
+			<trans-unit id="tx_rncontacts_domain_model_contact.management">
+				<source>Management</source>
+			</trans-unit>
+			<trans-unit id="tx_rncontacts_domain_model_contact.presence">
+				<source>Presence</source>
+			</trans-unit>
+			<trans-unit id="tx_rncontacts_domain_model_contact.opening_hours">
+				<source>Opening Hours</source>
+			</trans-unit>
+			<trans-unit id="tx_rncontacts_domain_model_contact.district">
+				<source>District</source>
+			</trans-unit>
+			<trans-unit id="tx_rncontacts_domain_model_contact.activity_consultant">
+				<source>Activity Consultant</source>
+			</trans-unit>
+			<trans-unit id="tx_rncontacts_domain_model_contact.activity_project">
+				<source>Activity Project</source>
+			</trans-unit>
+			<trans-unit id="tx_rncontacts_domain_model_contact.activity_consulting">
+				<source>Activity Consulting</source>
+			</trans-unit>
+			<trans-unit id="tx_rncontacts_domain_model_contact.topic">
+				<source>Topic</source>
+			</trans-unit>
+			<trans-unit id="tx_rncontacts_domain_model_contact.paper">
+				<source>Paper</source>
+			</trans-unit>
+			<trans-unit id="tx_rncontacts_domain_model_contact.targetgroup">
+				<source>Targetgroup</source>
+			</trans-unit>
+			<trans-unit id="tt_address.tx_extbase_type.Tx_Rncontacts_Contact">
+				<source>People Database Contact</source>
+			</trans-unit>
+			<trans-unit id="tx_rncontacts_domain_model_paper">
+				<source>Paper</source>
+			</trans-unit>
+			<trans-unit id="tx_rncontacts_domain_model_paper.title">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="tx_rncontacts_domain_model_activityproject">
+				<source>Activity Project</source>
+			</trans-unit>
+			<trans-unit id="tx_rncontacts_domain_model_activityproject.title">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="tx_rncontacts_domain_model_activityconsulting">
+				<source>Activity Consulting</source>
+			</trans-unit>
+			<trans-unit id="tx_rncontacts_domain_model_activityconsulting.title">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="tx_rncontacts_domain_model_activityconsultant">
+				<source>Activity Consultant</source>
+			</trans-unit>
+			<trans-unit id="tx_rncontacts_domain_model_activityconsultant.title">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="tx_rncontacts_domain_model_targetgroup">
+				<source>Targetgroup</source>
+			</trans-unit>
+			<trans-unit id="tx_rncontacts_domain_model_targetgroup.title">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="tx_rncontacts_domain_model_topic">
+				<source>Topic</source>
+			</trans-unit>
+			<trans-unit id="tx_rncontacts_domain_model_topic.title">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="tx_rncontacts_domain_model_district">
+				<source>District</source>
+			</trans-unit>
+			<trans-unit id="tx_rncontacts_domain_model_district.title">
+				<source>Title</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

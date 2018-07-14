@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2018-01-31T14:29:30Z" product-name="rncontacts">
+		<header/>
+		<body>
+			<trans-unit id="type.description">
+				<source>type</source>
+			</trans-unit>
+			<trans-unit id="title.description">
+				<source>title</source>
+			</trans-unit>
+			<trans-unit id="street.description">
+				<source>street</source>
+			</trans-unit>
+			<trans-unit id="hnr.description">
+				<source>hnr</source>
+			</trans-unit>
+			<trans-unit id="zip.description">
+				<source>zip</source>
+			</trans-unit>
+			<trans-unit id="city.description">
+				<source>city</source>
+			</trans-unit>
+			<trans-unit id="coordinatex.description">
+				<source>coordinatex</source>
+			</trans-unit>
+			<trans-unit id="coordinatey.description">
+				<source>coordinatey</source>
+			</trans-unit>
+			<trans-unit id="district.description">
+				<source>district</source>
+			</trans-unit>
+			<trans-unit id="contacts.description">
+				<source>contacts</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

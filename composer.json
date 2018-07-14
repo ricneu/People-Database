@@ -1,0 +1,19 @@
+{
+    "name": "rn/rncontacts",
+    "type": "typo3-cms-extension",
+    "description": "",
+    "authors": [
+        {
+            "name": "Rico Neumann",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "typo3/cms-core": "^8.7.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "RN\\Rncontacts\\": "Classes"
+        }
+    }
+}

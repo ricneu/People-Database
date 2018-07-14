@@ -1,0 +1,13 @@
+
+config.tx_extbase {
+  persistence {
+    classes {
+      RN\Rncontacts\Domain\Model\Contact {
+        mapping {
+          tableName = tt_address
+          recordType = Tx_Rncontacts_Contact
+        }
+      }
+    }
+  }
+}

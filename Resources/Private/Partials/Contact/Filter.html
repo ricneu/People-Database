@@ -1,0 +1,44 @@
+<div class="wrap__inner">
+	<div class="grid-m-12 grid-s-12">
+		<div class="c-m-filter-box c-m-filter-box--contact ">
+			<f:form noCacheHash="true" method="get">
+			<div class="c-m-filter-box__inner">
+				<div class="c-a-checkbox c-a-checkbox-main" data-checkbox-id="1" {f:if(condition: '{filterParameter.contacttype}', else: 'data-checkbox-checked="true"')}{f:if(condition: '{filterParameter.contacttype} == 2', then: 'data-checkbox-checked="true"')}> <label>
+					<f:form.radio name="contacttype" value="2" />
+					<span class="c-a-checkbox__label"><f:translate key="LLL:EXT:rncontacts/Resources/Private/Language/locallang_db.xlf:tx_rncontacts_domain_model_contact.type.2" /> </span>
+				</label> </div>
+				<div class="c-a-checkbox c-a-checkbox-main" data-checkbox-id="2" {f:if(condition: '{filterParameter.contacttype} == 1', then: 'data-checkbox-checked="true"')}> <label>
+					<f:form.radio name="contacttype" value="1" />
+					<span class="c-a-checkbox__label"><f:translate key="LLL:EXT:rncontacts/Resources/Private/Language/locallang_db.xlf:tx_rncontacts_domain_model_contact.type.1" /> </span>
+				</label> </div>
+				<div class="c-a-checkbox c-a-checkbox-main" data-checkbox-id="3" {f:if(condition: '{filterParameter.contacttype} == 3', then: 'data-checkbox-checked="true"')}> <label>
+					<f:form.radio name="contacttype" value="3" />
+					<span class="c-a-checkbox__label"><f:translate key="LLL:EXT:rncontacts/Resources/Private/Language/locallang_db.xlf:tx_rncontacts_domain_model_contact.type.3" /> </span>
+				</label> </div>
+				<div class="c-a-checkbox c-a-checkbox-main" data-checkbox-id="4" {f:if(condition: '{filterParameter.contacttype} == 4', then: 'data-checkbox-checked="true"')}> <label>
+					<f:form.radio name="contacttype" value="4" />
+					<span class="c-a-checkbox__label"><f:translate key="LLL:EXT:rncontacts/Resources/Private/Language/locallang_db.xlf:tx_rncontacts_domain_model_contact.type.4" /> </span>
+				</label> </div>
+				<div class="clear"></div>
+				<div class="c-m-filter-box__sub c-m-filter-box__sub-id-1">
+					<f:render partial="Contact/Filter.Locations" arguments="{locations:locationsMember,filterParameter:filterParameter,locationID:'1'}" />
+					<f:render partial="Contact/Filter.Letters" arguments="{filterParameter:filterParameter,letterID:'1'}" />
+				</div>
+				<div class="c-m-filter-box__sub c-m-filter-box__sub-id-3">
+					<f:render partial="Contact/Filter.Locations" arguments="{locations:locationsConsultant,filterParameter:filterParameter,locationID:'2'}" />
+					<f:render partial="Contact/Filter.Letters" arguments="{filterParameter:filterParameter,letterID:'2'}" />
+				</div>
+				<div class="c-m-filter-box__sub c-m-filter-box__sub-id-4">
+					<f:render partial="Contact/Filter.Targetgroups" arguments="{_all}" />
+					<f:render partial="Contact/Filter.Topics" arguments="{_all}" />
+					<f:render partial="Contact/Filter.Districts" arguments="{_all}" />
+					<f:render partial="Contact/Filter.Letters" arguments="{filterParameter:filterParameter,letterID:'3'}" />
+				</div>
+			</div>
+
+			<a href="javascript:;" onclick="parentNode.submit();" class="c-a-btn" title="{f:translate(key:'LLL:EXT:rncontacts/Resources/Private/Language/locallang_db.xlf:tx_rncontacts_domain_model_contact.submit')}" tabindex="0">{f:translate(key:'LLL:EXT:rncontacts/Resources/Private/Language/locallang_db.xlf:tx_rncontacts_domain_model_contact.submit')}</a>
+			</f:form>
+		</div>
+	</div>
+</div>
+
