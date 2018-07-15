@@ -6,7 +6,7 @@ This is a TYPO3 (Extbase Framework) Code Example from me.
 Requirements
 ------------
 
-  * TYPO3 Requirments [1]
+  * TYPO3 Requirements [1]
 
 Features
 ------------
